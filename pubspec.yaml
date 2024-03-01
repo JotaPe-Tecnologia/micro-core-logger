@@ -1,15 +1,15 @@
 name: easy_logs
-description: A starting point for Dart libraries or applications.
-version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+description: This is a simple package to log formatted messages on terminal easily with colors.
+version: 0.0.1
+repository: https://github.com/JotaPe-Tecnologia/easy-logs
+issue_tracker: https://github.com/JotaPe-Tecnologia/easy-logs/issues
+homepage: https://www.jotapetecnologia.com.br/flutter/packages/easy_logs
 
 environment:
   sdk: ^3.2.6
 
-# Add regular dependencies here.
-dependencies:
-  # path: ^1.8.0
-
 dev_dependencies:
-  lints: ^2.1.0
-  test: ^1.24.0
+  coverage: ^1.7.2
+  lints: ^3.0.0
+  mocktail: ^1.0.3
+  test: ^1.25.0

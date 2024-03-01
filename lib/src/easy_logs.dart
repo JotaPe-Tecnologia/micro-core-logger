@@ -12,6 +12,5 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-library easy_logs;
-
-export 'src/easy_logs.dart';
+export 'easy_logs_base.dart';
+export 'enums/easy_logs_color.dart';
