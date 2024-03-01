@@ -1,4 +1,4 @@
-## 0.0.1
+## 0.1.0
 
 -   Error, Info, Success and Warning logs.
 -   Error logs with Error and StackTrace.
