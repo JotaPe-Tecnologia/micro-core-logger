@@ -5,6 +5,7 @@ import 'package:test/test.dart';
 
 void main() {
   final logs = <String>[];
+  // Zone to simulate output events
   final zoneSpec = ZoneSpecification(
     print: (_, __, ___, message) {
       logs.add(message);
