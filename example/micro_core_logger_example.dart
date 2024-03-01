@@ -12,30 +12,30 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:easy_logs/easy_logs.dart';
+import 'package:micro_core_logger/micro_core_logger.dart';
 
 void main() {
   // + Generics
   // - Generic Log (Default Black)
-  EasyLogs.log('Hello World!');
+  Logger.log('Hello World!');
   // - Generic Log with color
-  EasyLogs.log('Hello World!', color: EasyLogsColor.brightMagenta);
+  Logger.log('Hello World!', color: LoggerColor.brightMagenta);
   // - Generic Log with level
-  EasyLogs.log('Hello World!', level: 1);
+  Logger.log('Hello World!', level: 1);
   // - Generic Log with sequence number
-  EasyLogs.log('Hello World!', sequenceNumber: 4);
+  Logger.log('Hello World!', sequenceNumber: 4);
   // - Generic Log with time
-  EasyLogs.log('Hello World!', time: DateTime.now());
+  Logger.log('Hello World!', time: DateTime.now());
   // - Generic Log with everything
-  EasyLogs.log(
+  Logger.log(
     'Hello World!',
-    color: EasyLogsColor.brightMagenta,
+    color: LoggerColor.brightMagenta,
     level: 1,
     sequenceNumber: 4,
     time: DateTime.now(),
   );
-  
-  final logger = EasyLogs();
+
+  final logger = Logger();
 
   // + Logging Errors
   // - Error Log

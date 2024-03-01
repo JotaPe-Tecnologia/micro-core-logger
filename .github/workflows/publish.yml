@@ -1,4 +1,4 @@
-name: Publish - Easy Logs
+name: Publish - Micro Core Logger
 
 on:
     workflow_dispatch:

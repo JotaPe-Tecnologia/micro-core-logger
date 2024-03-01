@@ -14,13 +14,13 @@
 
 import 'dart:async';
 
-import '../enums/easy_logs_color.dart';
+import '../enums/logger_color.dart';
 
 /// The available options to log messages.
-abstract interface class EasyLogsOptions {
+abstract interface class LoggerOptions {
   /// The method that should be used to log error messages.
   ///
-  /// By default the color of this log will be [EasyLogsColor.red].
+  /// By default the color of this log will be [LoggerColor.red].
   void logError(
     String message, {
     int level = 0,
@@ -31,8 +31,9 @@ abstract interface class EasyLogsOptions {
 
   /// The method that should be used to log info messages.
   ///
-  /// By default the color of this log will be [EasyLogsColor.cyan].
-  void logInfo(String message, {
+  /// By default the color of this log will be [LoggerColor.cyan].
+  void logInfo(
+    String message, {
     int level = 0,
     int? sequenceNumber,
     DateTime? time,
@@ -41,8 +42,9 @@ abstract interface class EasyLogsOptions {
 
   /// The method that should be used to log success messages.
   ///
-  /// By default the color of this log will be [EasyLogsColor.green].
-  void logSuccess(String message, {
+  /// By default the color of this log will be [LoggerColor.green].
+  void logSuccess(
+    String message, {
     int level = 0,
     int? sequenceNumber,
     DateTime? time,
@@ -51,8 +53,9 @@ abstract interface class EasyLogsOptions {
 
   /// The method that should be used to log warning messages.
   ///
-  /// By default the color of this log will be [EasyLogsColor.yellow].
-  void logWarning(String message, {
+  /// By default the color of this log will be [LoggerColor.yellow].
+  void logWarning(
+    String message, {
     int level = 0,
     int? sequenceNumber,
     DateTime? time,

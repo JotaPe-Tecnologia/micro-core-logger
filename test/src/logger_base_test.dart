@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:easy_logs/easy_logs.dart';
+import 'package:micro_core_logger/micro_core_logger.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -14,7 +14,7 @@ void main() {
   tearDown(logs.clear);
 
   group(
-    'EasyLogs.log() |',
+    'Logger.log() |',
     () {
       test(
         'Should show the correct message on terminal when logged',
@@ -25,7 +25,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs.log(message),
+            () => Logger.log(message),
             zoneSpecification: zoneSpec,
           );
 
@@ -43,7 +43,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs.log(message, color: EasyLogsColor.brightYellow),
+            () => Logger.log(message, color: LoggerColor.brightYellow),
             zoneSpecification: zoneSpec,
           );
 
@@ -61,7 +61,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs.log(message, level: 4),
+            () => Logger.log(message, level: 4),
             zoneSpecification: zoneSpec,
           );
 
@@ -79,7 +79,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs.log(message, sequenceNumber: 4),
+            () => Logger.log(message, sequenceNumber: 4),
             zoneSpecification: zoneSpec,
           );
 
@@ -98,7 +98,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs.log(message, time: time),
+            () => Logger.log(message, time: time),
             zoneSpecification: zoneSpec,
           );
 
@@ -119,9 +119,9 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs.log(
+            () => Logger.log(
               message,
-              color: EasyLogsColor.brightYellow,
+              color: LoggerColor.brightYellow,
               level: level,
               sequenceNumber: sequenceNumber,
               time: time,
@@ -148,7 +148,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logError(message),
+            () => Logger().logError(message),
             zoneSpecification: zoneSpec,
           );
 
@@ -166,7 +166,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logError(message, level: 4),
+            () => Logger().logError(message, level: 4),
             zoneSpecification: zoneSpec,
           );
 
@@ -184,7 +184,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logError(message, sequenceNumber: 4),
+            () => Logger().logError(message, sequenceNumber: 4),
             zoneSpecification: zoneSpec,
           );
 
@@ -203,7 +203,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logError(message, time: time),
+            () => Logger().logError(message, time: time),
             zoneSpecification: zoneSpec,
           );
 
@@ -224,7 +224,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logError(
+            () => Logger().logError(
               message,
               level: level,
               sequenceNumber: sequenceNumber,
@@ -252,7 +252,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logInfo(message),
+            () => Logger().logInfo(message),
             zoneSpecification: zoneSpec,
           );
 
@@ -270,7 +270,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logInfo(message, level: 4),
+            () => Logger().logInfo(message, level: 4),
             zoneSpecification: zoneSpec,
           );
 
@@ -288,7 +288,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logInfo(message, sequenceNumber: 4),
+            () => Logger().logInfo(message, sequenceNumber: 4),
             zoneSpecification: zoneSpec,
           );
 
@@ -307,7 +307,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logInfo(message, time: time),
+            () => Logger().logInfo(message, time: time),
             zoneSpecification: zoneSpec,
           );
 
@@ -328,7 +328,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logInfo(
+            () => Logger().logInfo(
               message,
               level: level,
               sequenceNumber: sequenceNumber,
@@ -356,7 +356,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logSuccess(message),
+            () => Logger().logSuccess(message),
             zoneSpecification: zoneSpec,
           );
 
@@ -374,7 +374,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logSuccess(message, level: 4),
+            () => Logger().logSuccess(message, level: 4),
             zoneSpecification: zoneSpec,
           );
 
@@ -392,7 +392,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logSuccess(message, sequenceNumber: 4),
+            () => Logger().logSuccess(message, sequenceNumber: 4),
             zoneSpecification: zoneSpec,
           );
 
@@ -411,7 +411,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logSuccess(message, time: time),
+            () => Logger().logSuccess(message, time: time),
             zoneSpecification: zoneSpec,
           );
 
@@ -432,7 +432,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logSuccess(
+            () => Logger().logSuccess(
               message,
               level: level,
               sequenceNumber: sequenceNumber,
@@ -460,7 +460,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logWarning(message),
+            () => Logger().logWarning(message),
             zoneSpecification: zoneSpec,
           );
 
@@ -478,7 +478,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logWarning(message, level: 4),
+            () => Logger().logWarning(message, level: 4),
             zoneSpecification: zoneSpec,
           );
 
@@ -496,7 +496,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logWarning(message, sequenceNumber: 4),
+            () => Logger().logWarning(message, sequenceNumber: 4),
             zoneSpecification: zoneSpec,
           );
 
@@ -515,7 +515,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logWarning(message, time: time),
+            () => Logger().logWarning(message, time: time),
             zoneSpecification: zoneSpec,
           );
 
@@ -536,7 +536,7 @@ void main() {
 
           // Act
           runZoned<dynamic>(
-            () => EasyLogs().logWarning(
+            () => Logger().logWarning(
               message,
               level: level,
               sequenceNumber: sequenceNumber,

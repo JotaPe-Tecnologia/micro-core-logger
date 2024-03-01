@@ -1,4 +1,4 @@
-import 'package:easy_logs/easy_logs.dart';
+import 'package:micro_core_logger/micro_core_logger.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -10,7 +10,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 30;
-          final color = EasyLogsColor.black;
+          final color = LoggerColor.black;
 
           // Act
           final result = color.asANSI;
@@ -19,13 +19,13 @@ void main() {
           expect(result, expectedANSI);
         },
       );
-      
+
       test(
         'Should return the correct ANSI number when the color is blue.',
         () {
           // Arrange
           final expectedANSI = 34;
-          final color = EasyLogsColor.blue;
+          final color = LoggerColor.blue;
 
           // Act
           final result = color.asANSI;
@@ -40,7 +40,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 90;
-          final color = EasyLogsColor.brightBlack;
+          final color = LoggerColor.brightBlack;
 
           // Act
           final result = color.asANSI;
@@ -55,7 +55,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 94;
-          final color = EasyLogsColor.brightBlue;
+          final color = LoggerColor.brightBlue;
 
           // Act
           final result = color.asANSI;
@@ -70,7 +70,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 96;
-          final color = EasyLogsColor.brightCyan;
+          final color = LoggerColor.brightCyan;
 
           // Act
           final result = color.asANSI;
@@ -85,7 +85,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 92;
-          final color = EasyLogsColor.brightGreen;
+          final color = LoggerColor.brightGreen;
 
           // Act
           final result = color.asANSI;
@@ -100,7 +100,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 95;
-          final color = EasyLogsColor.brightMagenta;
+          final color = LoggerColor.brightMagenta;
 
           // Act
           final result = color.asANSI;
@@ -115,7 +115,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 91;
-          final color = EasyLogsColor.brightRed;
+          final color = LoggerColor.brightRed;
 
           // Act
           final result = color.asANSI;
@@ -130,7 +130,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 97;
-          final color = EasyLogsColor.brightWhite;
+          final color = LoggerColor.brightWhite;
 
           // Act
           final result = color.asANSI;
@@ -145,7 +145,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 93;
-          final color = EasyLogsColor.brightYellow;
+          final color = LoggerColor.brightYellow;
 
           // Act
           final result = color.asANSI;
@@ -160,7 +160,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 36;
-          final color = EasyLogsColor.cyan;
+          final color = LoggerColor.cyan;
 
           // Act
           final result = color.asANSI;
@@ -175,7 +175,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 32;
-          final color = EasyLogsColor.green;
+          final color = LoggerColor.green;
 
           // Act
           final result = color.asANSI;
@@ -190,7 +190,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 35;
-          final color = EasyLogsColor.magenta;
+          final color = LoggerColor.magenta;
 
           // Act
           final result = color.asANSI;
@@ -205,7 +205,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 31;
-          final color = EasyLogsColor.red;
+          final color = LoggerColor.red;
 
           // Act
           final result = color.asANSI;
@@ -220,7 +220,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 37;
-          final color = EasyLogsColor.white;
+          final color = LoggerColor.white;
 
           // Act
           final result = color.asANSI;
@@ -235,7 +235,7 @@ void main() {
         () {
           // Arrange
           final expectedANSI = 33;
-          final color = EasyLogsColor.yellow;
+          final color = LoggerColor.yellow;
 
           // Act
           final result = color.asANSI;

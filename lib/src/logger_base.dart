@@ -14,13 +14,13 @@
 
 import 'dart:async';
 
-import 'enums/easy_logs_color.dart';
-import 'interfaces/easy_logs_options.dart';
+import 'enums/logger_color.dart';
+import 'interfaces/logger_options.dart';
 
-export 'enums/easy_logs_color.dart';
+export 'enums/logger_color.dart';
 
 /// Class that handles the logging.
-final class EasyLogs implements EasyLogsOptions {
+final class Logger implements LoggerOptions {
   @override
   void logError(
     Object? message, {
@@ -31,7 +31,7 @@ final class EasyLogs implements EasyLogsOptions {
   }) {
     return log(
       message,
-      color: EasyLogsColor.red,
+      color: LoggerColor.red,
       level: level,
       sequenceNumber: sequenceNumber,
       time: time,
@@ -49,7 +49,7 @@ final class EasyLogs implements EasyLogsOptions {
   }) {
     return log(
       message,
-      color: EasyLogsColor.cyan,
+      color: LoggerColor.cyan,
       level: level,
       sequenceNumber: sequenceNumber,
       time: time,
@@ -67,7 +67,7 @@ final class EasyLogs implements EasyLogsOptions {
   }) {
     return log(
       message,
-      color: EasyLogsColor.green,
+      color: LoggerColor.green,
       level: level,
       sequenceNumber: sequenceNumber,
       time: time,
@@ -85,7 +85,7 @@ final class EasyLogs implements EasyLogsOptions {
   }) {
     return log(
       message,
-      color: EasyLogsColor.yellow,
+      color: LoggerColor.yellow,
       level: level,
       sequenceNumber: sequenceNumber,
       time: time,
@@ -96,7 +96,7 @@ final class EasyLogs implements EasyLogsOptions {
   /// The default method to log the messages on terminal.
   static void log(
     Object? message, {
-    EasyLogsColor color = EasyLogsColor.black,
+    LoggerColor color = LoggerColor.black,
     int level = 0,
     int? sequenceNumber,
     DateTime? time,

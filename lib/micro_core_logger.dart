@@ -12,27 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/// The color to use on the logs.
-enum EasyLogsColor {
-  black(30),
-  blue(34),
-  brightBlack(90),
-  brightBlue(94),
-  brightCyan(96),
-  brightGreen(92),
-  brightMagenta(95),
-  brightRed(91),
-  brightWhite(97),
-  brightYellow(93),
-  cyan(36),
-  green(32),
-  magenta(35),
-  red(31),
-  white(37),
-  yellow(33);
+library micro_core_logger;
 
-  /// The ANSI code for the color.
-  final int asANSI;
-
-  const EasyLogsColor(this.asANSI);
-}
+export 'src/micro_core_logger.dart';

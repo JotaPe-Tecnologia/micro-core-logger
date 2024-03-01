@@ -1,9 +1,9 @@
-name: easy_logs
+name: micro_core_logger
 description: This is a simple package to log formatted messages on terminal easily with colors.
 version: 0.0.1
-repository: https://github.com/JotaPe-Tecnologia/easy-logs
-issue_tracker: https://github.com/JotaPe-Tecnologia/easy-logs/issues
-homepage: https://www.jotapetecnologia.com.br/flutter/packages/easy_logs
+repository: https://github.com/JotaPe-Tecnologia/micro-core-logger
+issue_tracker: https://github.com/JotaPe-Tecnologia/micro-core-logger/issues
+homepage: https://www.jotapetecnologia.com.br/flutter/packages/micro_core_logger
 
 environment:
   sdk: ^3.2.6
